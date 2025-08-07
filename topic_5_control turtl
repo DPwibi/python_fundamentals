@@ -1,0 +1,37 @@
+import turtle
+import funs
+
+t1 = turtle.Turtle('turtle')
+
+
+
+turtle.listen()
+
+turtle.onkeypress(lambda: funs.move_up(t1),'w')
+
+turtle.onkeypress(lambda: funs.move_down(t1),'s')
+
+turtle.onkeypress(lambda: funs.move_left(t1),'a')
+
+turtle.onkeypress(lambda: funs.move_right(t1),'d')
+
+
+t2 = turtle.Turtle('turtle')
+
+
+
+turtle.onkeypress(lambda: funs.move_up(t2),'Up')
+
+turtle.onkeypress(lambda: funs.move_down(t2),'Down')
+
+turtle.onkeypress(lambda: funs.move_left(t2),'Left')
+
+turtle.onkeypress(lambda: funs.move_right(t2),'Right')
+
+
+while True:
+    t1.forward(1)
+    t2.forward(1)
+
+
+turtle.done()
